@@ -1,4 +1,4 @@
-FROM alpine:3.13.2
+FROM alpine:3.13.3
 ENV CARGO_INSTALL_ROOT="/usr/local/cargo"
 RUN apk --no-cache add rust cargo fontconfig-dev graphite2-dev harfbuzz-dev icu-dev openssl-dev zlib-dev g++ && \
     cargo install tectonic && \
